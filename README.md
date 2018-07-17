@@ -8,3 +8,5 @@
         - 数字(0.9876と-8.9)を抽出
     - ensyu3.txt
         - 英語(hello)を抽出
+#### Environmental setting
+- Macのセッティング
