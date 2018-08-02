@@ -10,3 +10,8 @@
         - 英語(hello)を抽出
 #### Environmental setting
 - Macのセッティング
+
+
+git add []
+git commit -m "コメント"
+git push origin master
