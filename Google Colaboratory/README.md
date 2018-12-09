@@ -34,9 +34,9 @@ drive.mount('/content/gdrive')
 %run gdrive/My\ Drive/gesdet_keras_Colab/train_blstm_debug.py gdrive/My\ Drive/gesdet_keras_Colab/model_test.hdf5 2 gdrive/My\ Drive/gesdet_keras_Colab/dataset
 ```
 
-- ファイルの入出力でで苦戦するかも
-ファイル名の前に　**gdrive/My\ Drive/gesdet_keras_Colab/** と記述する必要あり(めんどくせぇ・・・)
-
+- ファイルの入出力で苦戦するかも
+    - ファイル名の前に　**gdrive/My\ Drive/gesdet_keras_Colab/** と記述する必要あり(めんどくせぇ・・・)
+    - cdしても意味ありません
 
 ### 使用した感想
 - 後日更新
