@@ -3,15 +3,19 @@
 - LaTeXはなにかと使います
 
 - 基本、この[記事](https://qiita.com/DaiHasegawa/items/22732ca7a84bd34de923)を参照すればおｋ
-	- ただ私は上手く環境構築できず‥
+	- ~~ただ私は上手く環境構築できず‥~~
+	- MaCTeXをコマンドラインからインストールするのではなくて、[公式サイト](http://www.tug.org/mactex/mactex-download.html)からインストールしよう(たぶんそれで解決)
 
+
+## 下は上手くいかず苦労した後の残骸です、一応残しておきます(まじで時間の無駄だった)↓↓↓↓↓↓↓↓↓↓
+### アクション1
 - **詰まったときの解決法です。参考にしてみてください** → [この記事です](https://blog.ashija.net/2017/09/08/post-916/#Skim)
+	- この記事もいろいろしなくちゃいけなくてめんどくさいし、途中で詰まる
+	- `sudo zsh -c "rm ./CIDFont/*(@) ./CIDFSubst/*(@)"`で`zsh:1: no matches found: ./CIDFont/*(@)`というエラーを吐き、作業がストップした
 
 
-
-### 下は上手くいかなかった苦労した後の残骸です、一応残しておきます(まじで時間の無駄だった)↓↓↓↓↓↓↓↓↓↓
-
-### 1: 記事通りしたのに、pdf出力されない！
+### アクション2
+- __1: 記事通りしたのに、pdf出力されない！__
 - pdf出力に必要なghostscriptとimagemagickをbrewでインストール
 ```sh
 brew install ghostscript
@@ -22,7 +26,7 @@ brew install imagemagick
 
 **しかし‥、imagemagickと関連するモジュールのpythonが入らねぇ！**
 
-### 2: macOSをアップデート後、Xcodeの再インストールをしていない！
+- __2: macOSをアップデート後、Xcodeの再インストールをしていない！__
 - これしましょう
 ```sh
 xcode-select --install
