@@ -21,3 +21,11 @@ $ source bin/activate
 # 終了
 (PythonTest)% deactivate  
 ```
+
+# 矢印キーが効かなくなった場合
+
+[問題] なぜかpyenvのpythonの場合だけ、キーが効かない
+
+__readline__ が上手く動作しないことが原因らしい
+
+記事どおりにやったら、とりあえず上手くいった → https://qiita.com/hidekuro/items/546a7945b0ce566a80ee
