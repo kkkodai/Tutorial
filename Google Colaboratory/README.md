@@ -54,8 +54,9 @@ drive.mount('/content/gdrive')
 - TPUモデルではpredictができないので確認はCPUモデルに戻して行う
 
 詳しくは参考URLにて笑 → [https://stealthinu.hatenadiary.jp/entry/20181006/p1](https://stealthinu.hatenadiary.jp/entry/20181006/p1)
+また、tensorflowがアップデートされると書式が変わることある。最新はこっち　→ https://qiita.com/koshian2/items/9d538c7082687a3fb802
 
-あと、TIPS.mdにGPUからの変更点書きました
+あとはTIPS.mdにGPUからの変更点書きました
 
 <br>
 
