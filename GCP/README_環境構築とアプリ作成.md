@@ -1,7 +1,7 @@
 # Making Server
 ## 概要
+- gcloudをインストールしたい！ (要注意な内容あり、下記チェック↓)
 - サーバーを立ち上げたい！！
-
 - ローカルからssh！！
 
 ## 手順
@@ -17,10 +17,9 @@
 
 - よくあるサイトからインストールしてsh実行はうまくいかなかった..
     - ナンデダ...
-
 - 下ならできた！
     - [参考サイト](https://qiita.com/sakamossan/items/8ff74ed377dc77325b80)
-
+- gcloudは**なぜかpython3に対応していない。** このため当macではpyenvを実行してからgcloudは効かないので注意。(パスを指定すればいける？)
 
 ```
 $ brew cask install google-cloud-sdk
