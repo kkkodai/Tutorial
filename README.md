@@ -27,14 +27,9 @@
 - プログラミングの勉強
 
 - 各フォルダについて
-    - regex: 正規表現の勉強
-        - ensyu1.txt
-            - 数字(0123456789)を抽出
-        - ensyu2.txt
-            - 数字(0.9876と-8.9)を抽出
-        - ensyu3.txt
-            - 英語(hello)を抽出
-
+	- Python
+		- library: ライブラリの使い方
+	    - regex: 正規表現の勉強
     - Shell_Tips: シェルのおすすめコマンド
 
 ### qiita 
