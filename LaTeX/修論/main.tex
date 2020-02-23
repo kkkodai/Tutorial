@@ -1,0 +1,98 @@
+% XeLaTeXでコンパイルしてください(他だとエラー起こすはず)
+% 警告表示が出ると思うけど、PDFは生成されます(最後まで警告を無くすことが出来なかった)
+
+\documentclass[a4paper,12pt]{bxjsreport}
+\usepackage{url}
+\usepackage{diagbox}
+\usepackage{fontspec}
+\usepackage{zxjatype}
+\usepackage{caption}
+\usepackage[backend=biber,style=numeric,sorting=none]{biblatex} %biblatex用
+\addbibresource{bibliography.bib} %biblatex用
+\setjamainfont{ipam.ttf}
+\setjasansfont{ipag.ttf}
+\setjamonofont{ipag.ttf}
+
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{bm}
+\usepackage{siunitx}
+\usepackage[dvipdfmx]{hyperref,graphicx}
+\usepackage{pxjahyper}
+\hypersetup{
+	colorlinks=false, % リンクに色をつけない設定
+	bookmarks=true, % 以下ブックマークに関する設定
+	bookmarksnumbered=true,
+	pdfborder={0 0 0},
+	bookmarkstype=toc
+}
+
+\usepackage{remreset}
+\makeatletter
+	\@removefromreset{figure}{chapter}
+	\def\thefigure{\arabic{figure}}
+	\@removefromreset{table}{chapter}
+	\def\thetable{\arabic{table}}
+	\@removefromreset{equation}{chapter}
+	\def\theequation{\arabic{equation}}
+\makeatother
+
+%chapterのフォントサイズ変更
+\makeatletter%%
+\def\@makechapterhead#1{\hbox{}%
+  \vskip-1\Cvs
+  {\parindent\z@
+%  \reset@font\LARGE\bfseries
+  % 太字の変更はここ  
+  \normalfont\huge\sffamily\gtfamily%%
+  \ifnum \c@secnumdepth >\m@ne
+     \setlength\@tempdima{\linewidth}%
+     \vtop{\hsize\@tempdima%
+         \@chapapp\thechapter\@chappos\mbox{\ \ }%
+     #1}%
+  \else
+     #1\relax
+  \fi}\nobreak\vskip1\Cvs}
+\makeatother%%
+
+
+%schapterのフォントサイズ変更
+\makeatletter%%
+\def\@makeschapterhead#1{\hbox{}%
+  \vskip-1\Cvs
+  {\parindent \z@ 
+  \raggedright\normalfont\huge\bfseries% 左揃え
+    \interlinepenalty\@M
+    \huge\headfont #1\par\nobreak
+    \vskip1\Cvs}}
+\makeatother%%
+
+\title{修士論文\\[1cm]ホゲホゲに関する研究\\[1cm]\\A Study on  hogehoge}
+\author{〇〇大学院情報科学研究科\\〇〇専攻\\〇〇研究室\\言語 太郎\\[0.3cm]}
+\date{令和〇年2月}
+
+\begin{document}
+\maketitle
+
+% 目次
+\setcounter{tocdepth}{3}
+\tableofcontents
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%  本文
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\include{introduction}
+\include{relatedwork}
+\include{proposed}
+\include{experiment}
+\include{result}
+\include{consideration}
+\include{conclusion}
+\include{acknowledgements}
+
+\cleardoublepage
+\phantomsection
+\addcontentsline{toc}{chapter}{参考文献}
+\printbibliography[title=参考文献]  
+\include{performance}
+
+\end{document}
