@@ -4,6 +4,8 @@
 - [pandas.DataFrameに列や行を追加（assign, appendなど）](https://note.nkmk.me/python-pandas-assign-append/)
 - ソート
 - [pandas.DataFrame, Seriesのインデックスを振り直すreset_index](https://note.nkmk.me/python-pandas-reset-index/)
+- [置換はreplace](https://note.nkmk.me/python-pandas-replace/)
+- [ユニークな値の操作(個数、頻度)](https://note.nkmk.me/python-pandas-value-counts/)
 
 #### とっても細かい話
 - svmdataset作ってた時の話だけど,カラム(列)の数値が同じだとcsvからtxtにデータを移すとき、「数値.1」という形式になってしまう、これはcolumnの性質が原因か
