@@ -113,3 +113,15 @@ $ youtube-dl -f mp4 'https://www.youtube.com/watch?v=0E00Zuayv9Q'
 ```bash
 $ youtube-dl -x --audio-format mp3 'https://www.youtube.com/watch?v=0E00Zuayv9Q'
 ```
+
+5. 403errorが出た時
+
+キャッシュを消すと治ることあり！ [記事](https://teratail.com/questions/254438)
+```sh
+youtube-dl --rm-cache-dir
+```
+
+コマンド押下後
+```sh
+Removing cache dir /Users/kodaihiyori/.cache/youtube-dl ...
+```
