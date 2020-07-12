@@ -1,3 +1,7 @@
+# ハック
+### 日本語設定
+[神記事](https://qiita.com/Masahiro_T/items/cfe1a016a4f0db5df760)
+
 # csv
 ### 基本操作
 - indexが列指定、colonmnが行指定
