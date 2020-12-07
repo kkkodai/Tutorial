@@ -14,4 +14,13 @@
 - [gazeboのインストール](https://r17u.hatenablog.com/entry/2017/06/11/213942)
 	- うまくいかーん
 - [Dockerで ROS Kinetic 環境を扱う](https://qiita.com/seigot/items/9a3a101dbbd7828ee00b)
-	- 予めできている環境をpullしてみる
+	- 予めできている環境をpullしてみる。亀は動く。gazeboのインストールの仕方がわからん。
+- [優秀なdockerfile。ros・rviz・Gazebo全部入ってる](https://medium.com/@iamprincebansal/complete-ros-kinetic-docker-gui-for-mac-setup-d5ad63b75a5e)
+
+- [講師のサイト](https://robot.isc.chubu.ac.jp/?p=458)
+
+- [問題は他にもあるけど公開鍵のエラーは解消](https://www.it-swarm-ja.tech/ja/linux/sudo-aptkey-adv-keyserver-keyserverubuntucom-recv-7f0ceb10%E3%82%B3%E3%83%9E%E3%83%B3%E3%83%89%E3%81%8C%E3%82%A8%E3%83%A9%E3%83%BC%E3%82%92%E8%BF%94%E3%81%99/959303249/)
+	- していない...
+
+
+今日は限界...
