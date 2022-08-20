@@ -72,6 +72,7 @@ $ git push
 
 '''sh
 ~~$ git config --local credential.helper wincred~~
+# リモート側のリポジトリ情報を初回addする際に使う
 $ git remote add origin https://github.com/【アカウント名】/【リポジトリ名】
 $ git remote origin set-url https://【アカウント名】@github.com/【アカウント名】/【リポジトリ名】
 
