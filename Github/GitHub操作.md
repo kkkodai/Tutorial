@@ -64,6 +64,19 @@ $ git add <ファイル名>
 $ git commit -m “コメント”
 $ git push
 
+### 複数アカウントでの操作（windows版）
+- 切り替え時初回は毎回以下の操作が必要かも。
+- 不便なのでもっと簡単な方法でできないものか
+- 参考資料
+	- [Windowsで会社用と個人用のGitHubアカウントを Httpsを使って簡単に切り替える方法を丁寧に説明する。](https://zenn.dev/longbridge/articles/a91089c30851ff#%E8%A4%87%E6%95%B0%E3%82%A2%E3%82%AB%E3%82%A6%E3%83%B3%E3%83%88%E3%81%A7-github-%E3%81%AB-https-%E6%8E%A5%E7%B6%9A%E3%81%99%E3%82%8B)
+
+'''sh
+~~$ git config --local credential.helper wincred~~
+$ git remote add origin https://github.com/【アカウント名】/【リポジトリ名】
+$ git remote origin set-url https://【アカウント名】@github.com/【アカウント名】/【リポジトリ名】
+
+'''
+
 
 ## 注意点
 ### PCを変えて今まで作業していたレポジトリにpushする際、config設定をすること
